@@ -1,0 +1,17 @@
+- content_for(:title, 'Polls')
+
+%table
+  %thead
+    %th== Title
+    %th== Responses
+    %th= 'Actions' if current_user and current_user.admin?
+  %tbody#poll_body
+    - @polls.each do |poll|
+      %tr.poll_row
+        - if current_user
+          %td= link_to(poll.question, new_poll_poll_response_path(poll))
+        - else
+          %td= poll.title
+        %td= poll.poll_responses.count
+        %td= link_to('Results', poll_poll_responses_path(poll)) if current_user and current_user.admin?
+

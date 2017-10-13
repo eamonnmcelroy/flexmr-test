@@ -1,0 +1,38 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+holiday_canada:
+  id: 1
+  poll_id: 1
+  text: Canada
+holiday_spain:
+  id: 2
+  poll_id: 1
+  text: Spain
+holiday_uk:
+  id: 3
+  poll_id: 1
+  text: UK
+holiday_skegness:
+  id: 4
+  poll_id: 1
+  text: Skegness
+
+editor_vim:
+  id: 5
+  poll_id: 2
+  text: vim
+
+editor_emacs:
+  id: 6
+  poll_id: 2
+  text: emacs
+
+editor_sublime:
+  id: 7
+  poll_id: 2
+  text: Sublime
+
+editor_atom:
+  id: 8
+  poll_id: 2
+  text: Atom

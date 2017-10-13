@@ -1,0 +1,9 @@
+!!!
+%html
+  %head= render partial: 'shared/head'
+  %body
+    = render partial: 'shared/header'
+    = render partial: 'shared/flash_messages'
+    .page-title= yield :title if content_for?(:title)
+    .content
+      = yield

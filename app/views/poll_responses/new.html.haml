@@ -1,0 +1,6 @@
+- content_for(:title,'New Poll Response')
+
+= semantic_form_for @poll_response, url: poll_poll_responses_url do |f|
+  = f.inputs do 
+    = f.input :poll_option_id, as: :radio, collection: @poll.option_collection, include_blank: false
+  = f.submit 'Submit choice'

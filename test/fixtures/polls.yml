@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+holiday:
+  id: 1
+  title: Which is your favourite holiday destination?
+
+editor:
+  id: 2
+  title: Which is your favourite text editor? 
+

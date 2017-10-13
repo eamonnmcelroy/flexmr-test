@@ -1,0 +1,21 @@
+table {
+  margin: auto;
+  margin-top: 20px;
+  border: solid black 1px;
+  border-collapse: separate;
+
+  thead th {
+    border-bottom: thin solid black;
+    padding: 5px 5px 10px 5px;
+    color: black;
+    text-align: left;
+  }
+
+  tbody td {
+    padding: 5px 5px;
+  }
+
+  tr:nth-child(even) {
+    background: #f0f8ff;
+  }
+}

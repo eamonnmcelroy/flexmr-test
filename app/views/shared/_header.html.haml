@@ -1,0 +1,9 @@
+%header
+  .content
+    .title
+      = link_to "FlexPoll", root_path
+    .login
+      - if current_user
+        %li.button= link_to 'Logout', logout_path
+      - else
+        %li.button= link_to 'Login', login_path

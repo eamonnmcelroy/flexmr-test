@@ -1,0 +1,13 @@
+- content_for(:title,'New Poll')
+
+= semantic_form_for @poll do |f|
+  = f.inputs do
+    = f.input :title
+    = f.input :question
+
+  = f.inputs do
+    = f.semantic_fields_for :poll_options do |q|
+      = render 'poll_option_fields', f: q
+    .links
+      = link_to_add_association 'Add another option', f, :poll_options
+  = f.submit "Create Poll"

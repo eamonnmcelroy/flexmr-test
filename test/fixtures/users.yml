@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+admin:
+  id: 1
+  admin: true
+  email: "admin@example.com"
+  crypted_password: "400$8$1b$68a3a3b9a12fc806$3704b6074729b4cb8d155fbe4f547bb4d1710f42743e6ad05e6e66a8acb2c81a"
+  password_salt: "uKgGY6O6Q7X3tgPYqt3o"
+
+user1:
+  id: 2
+  admin: false
+  email: "user1@example.com"
+  crypted_password: "400$8$4e$0e382d68e7b0b41c$06f35cf18c64c48362bbe290ca67c8f018f7d9ea15b0182f505ad1e0cc140c52" 
+  password_salt: "x2L13ZMwVVOmt2qYIhm" 
+

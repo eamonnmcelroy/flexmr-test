@@ -1,0 +1,12 @@
+-content_for(:title, "Results for \"#{@poll.question}\"")
+
+= pie_chart @poll.pie_chart_data
+
+= line_chart @poll.poll_responses.group_by_day(:created_at).count
+
+%hr
+
+%h2 Comments
+
+-# TODO add comments here
+
